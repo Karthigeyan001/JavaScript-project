@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HubPage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/HubPage/HubPage.css" rel="stylesheet" />
+    <script src="/js/HubData.js"></script>
+    <script src="/pages/HubPage/HubPage.js"></script>
+</head>
+<body>
+    <!-- These templates are used to display each item in the ListView declared below. -->
+    <div class="headertemplate" data-win-control="WinJS.Binding.Template">
+        <button class="group-header win-type-x-large win-type-interactive" data-win-bind="groupKey: key"
+            onclick="Application.navigator.pageControl.navigateToGroup(event.srcElement.groupKey)" role="link" tabindex="-1" type="button">
+            <span class="group-title win-type-ellipsis" data-win-bind="innerHTML: title"></span>
+            <span class="group-chevron"></span>
+        </button>
+    </div>
+    <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item">
+            <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            <div class="item-overlay">
+                <h4 class="item-title" data-win-bind="innerHTML: title"></h4>
+                <!--<h6 class="item-subtitle win-type-ellipsis" data-win-bind="innerHTML: subtitle"></h6>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Variable Tile Template. -->
+
+    <div class="BiggerBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="BiggerTemplate win-interactive">
+            <img class="BiggerImage" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            <!--<div class="BiggerOverlay">
+                <div class="BiggerTitle" data-win-bind="textContent: title"></div>
+                <div class="BiggerSubtitle" data-win-bind="textContent: subtitle"></div>
+            </div>-->
+        </div>
+    </div>
+
+    <div class="BigBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="BigTemplate">
+            <!--<img class="BigImage" src="#" data-win-bind="src: backgroundImage; alt: title" />-->
+            <div class="BigTitle" data-win-bind="textContent: title"></div>
+            <!--<div class="BigTitle" data-win-bind="textContent: subtitle"></div>-->
+        </div>
+    </div>
+
+    <div class="MediumBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="MediumTemplate" data-win-bind="style.backgroundColor: backgroundColor">
+            <img class="MediumImage" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            <div class="MediumOverlay">
+                <div class="MediumTitle" data-win-bind="textContent: title"></div>
+                <div class="MediumSubtitle" data-win-bind="textContent: subtitle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="SmallBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="SmallTemplate" data-win-bind="style.backgroundColor: backgroundColor">
+            <div class="SmallTitle" data-win-bind="textContent: title"></div>
+            <div class="SmallSubtitle" data-win-bind="textContent: subtitle"></div>
+        </div>
+    </div>
+
+    <div class="CampusBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="CampusTemplate">
+            <img class="CampusImage" src="#" data-win-bind="src: backgroundImage; alt: title" />
+            <div class="CampusOverlay">
+                <div class="CampusTitle" data-win-bind="innerHTML: title"></div>
+                <div class="CampusSubtitle" data-win-bind="textContent: subtitle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="CampusOneBoxTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="CampusOneTemplate">
+            <div class="CampusOneOverlay" style="z-index: 1;">
+                <div class="CampusOneTitle" data-win-bind="textContent: title"></div>
+                <div class="CampusOneSubtitle" data-win-bind="textContent: subtitle"></div>
+            </div>
+            <img class="CampusOneImage" src="#" data-win-bind="src: backgroundImage; alt: title" />
+        </div>
+    </div>
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment HubPage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <!--<h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Education2</span>
+            </h1>-->
+
+            <div class="logo">
+                <img src="../../images/AppLogo.png" />
+            </div>
+
+        </header>
+        <section aria-label="Main content" role="main">
+            <div class="HubMainDiv">
+                <div class="MainImgDiv">
+                    <div class="Imagemain"></div>
+                    <!--<div class="Logodiv"></div>-->
+                    <div class="Architectdiv">
+                        <div class="ArcTitle"><div class="logo">
+                                              <img src="../../images/AppLogo.png" />
+                                                </div></div>
+                    </div>
+                    <div class="ButtonsDiv">
+                        <div class="BtnDetail">W</div>
+                        <div class="BtnDetail">E</div>
+                        <div class="BtnDetail">L</div>
+                        <div class="BtnDetail">C</div>
+                        <div class="BtnDetail">O</div>
+                        <div class="BtnDetail">M</div>
+                        <div class="BtnDetail">E</div>
+                        <div class="BtnDetail">:)</div>
+                        <div class="BtnDetailLast">Use Backspace to Navigate Back</div>
+                    </div> 
+                                </div>
+                <div class="groupeditemslist win-selectionstylefilled" aria-label="List of groups" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'none' }"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

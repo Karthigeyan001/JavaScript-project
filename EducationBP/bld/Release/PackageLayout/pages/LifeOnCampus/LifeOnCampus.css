@@ -1,0 +1,366 @@
+﻿.LifeOnCampus section[role=main] {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+}
+
+.LifeOnCampus .groupeditemslist {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+    /* This selector is used to prevent ui-dark/light.css from overwriting changes
+       to .win-surface. */
+    .LifeOnCampus .groupeditemslist .win-horizontal.win-viewport .win-surface {
+        margin-bottom: 60px;
+        margin-left: 45px;
+        margin-right: 115px;
+        margin-top: 128px;
+    }
+
+    .LifeOnCampus .groupeditemslist.win-rtl .win-horizontal.win-viewport .win-surface {
+        margin-left: 115px;
+        margin-right: 45px;
+    }
+
+    .LifeOnCampus .groupeditemslist .win-groupheader {
+        padding: 0;
+    }
+
+    /* Use grid and top level layout for truncation */
+    .LifeOnCampus .groupeditemslist .group-header {
+        -ms-grid-columns: minmax(0, max-content) 7px max-content;
+        -ms-grid-rows: max-content;
+        display: -ms-inline-grid;
+        line-height: 1.5;
+    }
+
+    /* Override default button styles */
+    .LifeOnCampus .groupeditemslist .group-header, .group-header:hover, .group-header:hover:active {
+        background: transparent;
+        border: 0;
+        margin-bottom: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 1px;
+        min-height: 0;
+        padding: 0;
+    }
+
+        .LifeOnCampus .groupeditemslist .group-header .group-title {
+            /*display: inline-block;*/
+            color: #ffd458;
+            font-size: 32px;
+        }
+
+        .LifeOnCampus .groupeditemslist .group-header .group-chevron {
+            -ms-grid-column: 3;
+            display: inline-block;
+        }
+
+            .LifeOnCampus .groupeditemslist .group-header .group-chevron::before {
+                content: "\E26B";
+                font-family: 'Segoe UI Symbol';
+            }
+
+    .LifeOnCampus .groupeditemslist.win-rtl .group-header .group-chevron:before {
+        content: "\E26C";
+    }
+
+    .LifeOnCampus .groupeditemslist .item {
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 90px;
+        display: -ms-grid;
+        height: 250px;
+        width: 250px;
+    }
+
+        .LifeOnCampus .groupeditemslist .item .item-image {
+            -ms-grid-row-span: 2;
+        }
+
+        .LifeOnCampus .groupeditemslist .item .item-overlay {
+            -ms-grid-row: 2;
+            -ms-grid-rows: 1fr 21px;
+            display: -ms-grid;
+            padding: 6px 15px 2px 15px;
+        }
+
+            .LifeOnCampus .groupeditemslist .item .item-overlay .item-title {
+                -ms-grid-row: 1;
+                overflow: hidden;
+                width: 220px;
+            }
+
+            .LifeOnCampus .groupeditemslist .item .item-overlay .item-subtitle {
+                -ms-grid-row: 2;
+                width: 220px;
+            }
+
+@media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
+    .LifeOnCampus .groupeditemslist .item .item-overlay {
+        background: rgba(0,0,0,0.65);
+    }
+
+        .LifeOnCampus .groupeditemslist .item .item-overlay .item-title {
+            color: rgba(255,255,255,0.87);
+        }
+
+        .LifeOnCampus .groupeditemslist .item .item-overlay .item-subtitle {
+            color: rgba(255,255,255,0.6);
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) and (-ms-high-contrast), screen and (-ms-view-state: fullscreen-portrait) and (-ms-high-contrast), screen and (-ms-view-state: filled) and (-ms-high-contrast) {
+    .LifeOnCampus .groupeditemslist .item .item-overlay {
+        color: WindowText;
+    }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .LifeOnCampus section[role=main] {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+    }
+
+    .LifeOnCampus .groupeditemslist .win-vertical.win-viewport .win-surface {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .LifeOnCampus .groupeditemslist .win-container {
+        margin-bottom: 15px;
+        margin-left: 13px;
+        margin-right: 35px;
+        padding: 7px;
+    }
+
+    .LifeOnCampus .groupeditemslist.win-rtl .win-container {
+        margin-left: 21px;
+        margin-right: 26px;
+    }
+
+    .LifeOnCampus .groupeditemslist .item {
+        -ms-grid-columns: 60px 10px 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+        height: 60px;
+        width: 272px;
+    }
+
+        .LifeOnCampus .groupeditemslist .item .item-image {
+            -ms-grid-column: 1;
+            -ms-grid-row-span: 1;
+            height: 60px;
+            width: 60px;
+        }
+
+        .LifeOnCampus .groupeditemslist .item .item-overlay {
+            -ms-grid-column: 3;
+            -ms-grid-row: 1;
+            -ms-grid-row-align: stretch;
+            background: transparent;
+            padding: 0;
+        }
+
+            .LifeOnCampus .groupeditemslist .item .item-overlay .item-title {
+                margin-top: 4px;
+                width: 202px;
+            }
+
+            .LifeOnCampus .groupeditemslist .item .item-overlay .item-subtitle {
+                width: 202px;
+            }
+
+             .LifeOnCampus header[role=banner] .logo {
+            -ms-grid-column: 4;
+            margin-top: 25px;
+            float: right;
+            display: none;
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .LifeOnCampus .groupeditemslist .win-horizontal.win-viewport .win-surface {
+        margin-left: 25px;
+        margin-right: 95px;
+    }
+
+    .LifeOnCampus .groupeditemslist.win-rtl .win-horizontal.win-viewport .win-surface {
+        margin-left: 95px;
+        margin-right: 25px;
+    }
+}
+
+
+/*Variable tiles*/
+
+
+.LifeOnCampus .CampusTemplate {
+    width: 318px;
+    height: 455px;
+    -ms-grid-rows: 170px 1fr;
+    display: -ms-grid;
+}
+
+    .LifeOnCampus .CampusTemplate .CampusImage {
+        width: 318px;
+        height: 213px;
+        -ms-grid-row-span: 2;
+    }
+
+    .LifeOnCampus .CampusTemplate .CampusOverlay {
+        -ms-grid-row: 2;
+        width: 318px;
+        background-color: rgba(35,24,51,0.88);
+    }
+
+        .LifeOnCampus .CampusTemplate .CampusOverlay .CampusTitle {
+            font-family: 'Segoe UI';
+            font-size: 13.5px;
+            color: #fff;
+            margin-left: 30px;
+            margin-top: 20px;
+            line-height: 22px;
+            margin-right: 15px;
+        }
+
+        .LifeOnCampus .CampusTemplate .CampusOverlay .CampusSubtitle {
+            font-family: 'Segoe UI';
+            font-size: 13.5px;
+            color: #fff;
+            margin-left: 23px;
+            margin-top: 25px;
+            line-height: 25px;
+            margin-right: 15px;
+        }
+
+
+.LifeOnCampus .CampusOneTemplate {
+    width: 318px;
+    height: 455px;
+    -ms-grid-rows: 1fr 213px;
+    display: -ms-grid;
+}
+
+    .LifeOnCampus .CampusOneTemplate .CampusOneOverlay {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        height: 285px;
+        width: 318px;
+        background-color: rgba(35,24,51,0.88);
+    }
+
+        .LifeOnCampus .CampusOneTemplate .CampusOneOverlay .CampusOneTitle {
+            font-family: 'Segoe UI';
+            font-size: 13.5px;
+            color: #fff;
+            margin-left: 30px;
+            margin-top: 22px;
+            line-height: 25px;
+            margin-right: 15px;
+        }
+
+        /*.LifeOnCampus .CampusOneTemplate .CampusOneOverlay .CampusOneSubtitle {
+            font-family: 'Segoe UI';
+            font-size: 13.5px;
+            color: #fff;
+            margin-left: 20px;
+            margin-top: 25px;
+            line-height: 25px;
+            margin-right: 15px;
+        }*/
+
+    .LifeOnCampus .CampusOneTemplate .CampusOneImage {
+        width: 318px;
+        height: 213px;
+        -ms-grid-row: 2;
+    }
+
+
+.LifeOnCampus .FunTemplate {
+    width: 478px;
+    height: 217px;
+    /*-ms-grid-columns: 160px 1fr; */
+    display: -ms-grid;
+}
+
+    .LifeOnCampus .FunTemplate .FunImage {
+        height: 217px;
+        -ms-grid-column-span: 2;
+    }
+
+    .LifeOnCampus .FunTemplate .FunOverlay {
+        -ms-grid-column: 2;
+        height: 217px;
+        background-color: rgba(35,24,51,0.88);
+    }
+
+        .LifeOnCampus .FunTemplate .FunOverlay .FunTitle {
+            font-family: 'Segoe UI';
+            font-size: 13.5px;
+            color: #fff;
+            margin-left: 30px;
+            margin-top: 20px;
+            line-height: 22px;
+            margin-right: 15px;
+        }
+
+/*.LifeOnCampus .FunTemplate .FunOverlay .FunSubtitle {
+            font-family: 'Segoe UI';
+            font-size: 13.5px;
+            color: #fff;
+            margin-left: 23px;
+            margin-top: 25px;
+            line-height: 25px;
+            margin-right: 15px;
+        }*/
+
+
+
+.LifeOnCampus .FunOneTemplate {
+    width: 478px;
+    height: 217px;
+   /* -ms-grid-columns: 318px 1fr; */
+    display: -ms-grid;
+}
+
+    .LifeOnCampus .FunOneTemplate .FunOneOverlay {
+        -ms-grid-column: 1;
+        height: 217px;
+        background-color: rgba(35,24,51,0.88);
+    }
+
+        .LifeOnCampus .FunOneTemplate .FunOneOverlay .FunOneTitle {
+            font-family: 'Segoe UI';
+            font-size: 13.5px;
+            color: #fff;
+            margin-left: 30px;
+            margin-top: 20px;
+            line-height: 25px;
+            margin-right: 15px;
+        }
+
+    .LifeOnCampus .FunOneTemplate .FunOneImage {
+        height: 217px;
+        width: 478px;
+       -ms-grid-column-span: 2; 
+        -ms-grid-column: 1; 
+    }
+
+
+    .LifeOnCampus header[role=banner] .logo {
+            -ms-grid-column: 4;
+            margin-top: 25px;
+            float: right;
+        }
+
+
+.win-horizontal.win-viewport .win-container {
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+.win-vertical.win-viewport .win-container {
+    background-color: rgba(255, 255, 255, 0.0);
+}

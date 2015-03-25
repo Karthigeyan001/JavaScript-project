@@ -1,0 +1,564 @@
+﻿.HubPage section[role=main] {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+}
+
+.HubPage .HubMainDiv {
+    width: 100%;
+    height: 100%;
+    -ms-grid-columns: 890px auto;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    overflow-x: auto;
+}
+
+    .HubPage .HubMainDiv .MainImgDiv {
+        -ms-grid-column: 1;
+        height: 100%;
+        -ms-grid-columns: 272px 1fr 50px;
+        -ms-grid-rows: 1fr 135px 100px 138px 100px;
+        display: -ms-grid;
+    }
+
+        .HubPage .HubMainDiv .MainImgDiv .Imagemain {
+            -ms-grid-column-span: 3;
+            -ms-grid-row-span: 5;
+            width: 875px;
+            height: 100%;
+            background-image: url(/images/HubPage/MainBG.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .HubPage .HubMainDiv .MainImgDiv .Logodiv {
+            -ms-grid-column: 1;
+            -ms-grid-row: 3;
+            background-image: url(/images/AppLogo2.png);
+            background-repeat: no-repeat;
+            background-color: rgba(255,255,255,0.80);
+        }
+
+        .HubPage .HubMainDiv .MainImgDiv .Architectdiv {
+            -ms-grid-column: 1;
+            -ms-grid-row: 4;
+            -ms-grid-column-span: 2;
+            width: 3660px;
+            height: 120px;
+            margin-left: 95px;
+            background-color: rgba(35,24,51,0.88);
+        }
+
+            .HubPage .HubMainDiv .MainImgDiv .Architectdiv .ArcTitle {
+                font-size: 40px;
+                font-weight: lighter;
+                color: white;
+                margin-left: 20px;
+            }
+
+            .HubPage .HubMainDiv .MainImgDiv .Architectdiv .ArcSubtiltle {
+                font-size: 13.33px;
+                color: #fff;
+                margin-left: 20px;
+                margin-top: 5px;
+                line-height: 21px;
+            }
+
+        .HubPage .HubMainDiv .MainImgDiv .ButtonsDiv {
+            -ms-grid-column: 3;
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 3;
+            height: 220px;
+        }
+
+            .HubPage .HubMainDiv .MainImgDiv .ButtonsDiv .BtnDetail {
+                width: 39px;
+                height: 39px;
+                float: right;
+                padding-top: 3px;
+                font-size: 23.5px;
+                font-weight: lighter;
+                color: black;
+                text-align: center;
+                margin-top: 2px;
+                background-color: rgba(255, 255, 255, 0.78);
+            }
+
+            .HubPage .HubMainDiv .MainImgDiv .ButtonsDiv .BtnDetailLast {
+                width: 390px;
+                height: 39px;
+                float: right;
+                padding-top: 3px;
+                font-size: 23.5px;
+                font-weight: lighter;
+                color: black;
+                text-align: center;
+                margin-top: 2px;
+                background-color: rgba(255, 255, 255, 0.78);
+            }
+
+                .HubPage .HubMainDiv .MainImgDiv .ButtonsDiv .BtnDetail:hover {
+                    width: 48px;
+                    height: 48px;
+                    float: right;
+                    padding-top: 3px;
+                    font-size: 29.43px;
+                    font-weight: 600;
+                    color: black;
+                    text-align: center;
+                    background-color: #ffd457;
+                    
+                }
+
+            .HubPage .HubMainDiv .MainImgDiv .ButtonsDiv .BtnDetailLast:hover {
+                    width: 480px;
+                    height: 48px;
+                    float: right;
+                    padding-top: 3px;
+                    font-size: 29.43px;
+                    font-weight: 600;
+                    color: black;
+                    text-align: center;
+                    background-color: #ffd457 ;
+                    
+                }
+
+    .HubPage .HubMainDiv .groupeditemslist {
+        height: 100%;
+        position: relative;
+        width: 100%;
+        z-index: 0;
+        -ms-grid-column: 2;
+        margin-left: 50px;
+    }
+
+        /* This selector is used to prevent ui-dark/light.css from overwriting changes
+       to .win-surface. */
+        .HubPage .HubMainDiv .groupeditemslist .win-horizontal.win-viewport .win-surface {
+            margin-bottom: 60px;
+            margin-right: 115px;
+            margin-top: 128px;
+        }
+
+        .HubPage .HubMainDiv .groupeditemslist.win-rtl .win-horizontal.win-viewport .win-surface {
+            margin-left: 115px;
+            margin-right: 45px;
+        }
+
+        .HubPage .HubMainDiv .groupeditemslist .win-groupheader {
+            padding: 0;
+        }
+
+        /* Use grid and top level layout for truncation */
+        .HubPage .HubMainDiv .groupeditemslist .group-header {
+            -ms-grid-columns: minmax(0, max-content) 7px max-content;
+            -ms-grid-rows: max-content;
+            display: -ms-inline-grid;
+            line-height: 1.5;
+        }
+
+        /* Override default button styles */
+        .HubPage .HubMainDiv .groupeditemslist .group-header, .group-header:hover, .group-header:hover:active {
+            background: transparent;
+            border: 0;
+            margin-bottom: 1px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 1px;
+            min-height: 0;
+            padding: 0;
+        }
+
+            .HubPage .HubMainDiv .groupeditemslist .group-header .group-title {
+                display: inline-block;
+                color: #ffd458;
+                font-size: 35px;
+            }
+
+            .HubPage .HubMainDiv .groupeditemslist .group-header .group-chevron {
+                -ms-grid-column: 3;
+                display: inline-block;
+                color: #ffd458;
+                margin-top:10px;
+            }
+
+                .HubPage .HubMainDiv .groupeditemslist .group-header .group-chevron::before {
+                    content: "\E26B";
+                    font-family: 'Segoe UI Symbol';
+                }
+
+        .HubPage .HubMainDiv .groupeditemslist.win-rtl .group-header .group-chevron:before {
+            content: "\E26C";
+        }
+
+        .HubPage .HubMainDiv .groupeditemslist .item {
+            -ms-grid-columns: 1fr;
+            -ms-grid-rows: 1fr 90px;
+            display: -ms-grid;
+            height: 250px;
+            width: 250px;
+        }
+
+            .HubPage .HubMainDiv .groupeditemslist .item .item-image {
+                -ms-grid-row-span: 2;
+            }
+
+            .HubPage .HubMainDiv .groupeditemslist .item .item-overlay {
+                -ms-grid-row: 2;
+                -ms-grid-rows: 1fr 21px;
+                display: -ms-grid;
+                padding: 6px 15px 2px 15px;
+            }
+
+                .HubPage .HubMainDiv .groupeditemslist .item .item-overlay .item-title {
+                    -ms-grid-row: 1;
+                    overflow: hidden;
+                    width: 220px;
+                }
+
+                .HubPage .HubMainDiv .groupeditemslist .item .item-overlay .item-subtitle {
+                    -ms-grid-row: 2;
+                    width: 220px;
+                }
+
+@media screen and (-ms-view-state: fullscreen-landscape), screen and (-ms-view-state: fullscreen-portrait), screen and (-ms-view-state: filled) {
+    .HubPage .HubMainDiv .groupeditemslist .item .item-overlay {
+        background: rgba(0,0,0,0.65);
+    }
+
+        .HubPage .HubMainDiv .groupeditemslist .item .item-overlay .item-title {
+            color: rgba(255,255,255,0.87);
+        }
+
+        .HubPage .HubMainDiv .groupeditemslist .item .item-overlay .item-subtitle {
+            color: rgba(255,255,255,0.6);
+        }
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) and (-ms-high-contrast), screen and (-ms-view-state: fullscreen-portrait) and (-ms-high-contrast), screen and (-ms-view-state: filled) and (-ms-high-contrast) {
+    .HubPage .groupeditemslist .item .item-overlay {
+        color: WindowText;
+    }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .HubPage .HubMainDiv {
+        width: 320px;
+        height: 100%;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+        overflow-x: hidden;
+    }
+
+        .HubPage .HubMainDiv .MainImgDiv {
+            display: none;
+        }
+
+    .HubPage section[role=main] {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+    }
+
+    .HubPage .HubMainDiv .groupeditemslist .win-vertical.win-viewport .win-surface {
+        margin-bottom: 30px;
+        margin-top: 0;
+        clear: both;
+    }
+
+    .HubPage .HubMainDiv .groupeditemslist .win-container {
+        margin-bottom: 15px;
+        /*margin-left: 13px;*/
+        margin-right: 35px;
+        padding: 7px;
+    }
+
+    .HubPage .HubMainDiv .groupeditemslist {
+        -ms-grid-column: 1;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        z-index: 0;
+        margin-left: 0px;
+    }
+
+        .HubPage .HubMainDiv .groupeditemslist .item {
+            -ms-grid-columns: 60px 1fr;
+            -ms-grid-rows: 1fr;
+            display: -ms-grid;
+            height: 60px;
+            width: 285px;
+        }
+
+    .HubPage .groupeditemslist .item .item-image {
+        -ms-grid-column: 1;
+        -ms-grid-row-span: 1;
+        height: 60px;
+        width: 60px;
+    }
+
+    .HubPage .groupeditemslist .item .item-overlay {
+        -ms-grid-column: 3;
+        -ms-grid-row: 1;
+        -ms-grid-row-align: stretch;
+        background: transparent;
+        display: inline-block;
+        padding: 0;
+    }
+
+        .HubPage .groupeditemslist .item .item-overlay .item-title {
+            max-height: 40px;
+            width: 202px;
+            font-size: 24px;
+        }
+
+        .HubPage .groupeditemslist .item .item-overlay .item-subtitle {
+            opacity: 0.6;
+            width: 202px;
+        }
+
+        .HubPage header[role=banner] {
+        -ms-grid-columns: 120px 1fr;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .HubPage header[role=banner] .logo {
+        margin-top: 25px;
+        float: left;
+        display: inline-block;
+        -ms-grid-column: 1;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .HubPage .groupeditemslist .win-horizontal.win-viewport .win-surface {
+        margin-left: 25px;
+        margin-right: 95px;
+    }
+
+    .HubPage .groupeditemslist.win-rtl .win-horizontal.win-viewport .win-surface {
+        margin-left: 95px;
+        margin-right: 25px;
+    }
+}
+
+
+
+/*Variable tiles*/
+
+
+.HubPage .BiggerTemplate {
+    width: 378px;
+    height: 455px;
+}
+
+    .HubPage .BiggerTemplate .BiggerImage {
+        width: 378px;
+        height: 455px;
+    }
+
+/*.HubPage .BiggerTemplate .BiggerImage {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        width: 253px;
+    }
+
+    .HubPage .BiggerTemplate .BiggerOverlay {
+        -ms-grid-row: 2;
+        width: 241px;
+        margin-bottom: 6px;
+        -ms-grid-column-align: center;
+        background-color: rgba(0, 0, 0, 0.70);
+    }
+
+        .HubPage .BiggerTemplate .BiggerOverlay .BiggerTitle {
+            color: #ffffff;
+            font-size: 24px;
+            font-family: 'Segoe UI';
+            font-weight: 500;
+            margin-left: 10px;
+        }
+
+        .HubPage .BiggerTemplate .BiggerOverlay .BiggerSubtitle {
+            color: #ffffff;
+            font-size: 12px;
+            font-family: 'Segoe UI';
+            margin-left: 10px;
+            margin-top: 10px;
+        }*/
+
+
+.HubPage .BigTemplate {
+    width: 318px;
+    height: 455px;
+    background-color: rgba(35,24,51,0.88);
+}
+
+    .HubPage .BigTemplate .BigTitle {
+        color: #fff;
+        font-size: 13.33px;
+        font-family: 'Segoe UI';
+        margin-left: 25px;
+        padding-top: 20px;
+        margin-right: 20px;
+    }
+
+
+.HubPage .MediumTemplate {
+    width: 565px;
+    height: 100px;
+    -ms-grid-columns: 150px 20px 1fr;
+    display: -ms-grid;
+}
+
+    .HubPage .MediumTemplate .MediumImage {
+        -ms-grid-column: 1;
+        height: 100px;
+    }
+
+    .HubPage .MediumTemplate .MediumOverlay {
+        -ms-grid-column: 3;
+        height: 100px;
+    }
+
+        .HubPage .MediumTemplate .MediumOverlay .MediumTitle {
+            color: #ffd458;
+            font-size: 18.67px;
+            font-weight: bold;
+            font-family: 'Segoe UI';
+        }
+
+        .HubPage .MediumTemplate .MediumOverlay .MediumSubtitle {
+            color: #fff;
+            font-size: 13.5px;
+            font-family: 'Segoe UI';
+            margin-top: 10px;
+        }
+
+
+.HubPage .SmallTemplate {
+    width: 140px;
+    height: 140px;
+}
+
+    /*.HubPage .SmallTemplate .SmallImage {
+        -ms-grid-column: 1;
+        width: 190px;
+        height: 120px;
+    }
+
+    .HubPage .SmallTemplate .SmallOverlay {
+        -ms-grid-column: 1;
+        width: 190px;
+        height: 120px;
+    }*/
+
+    .HubPage .SmallTemplate .SmallTitle {
+        color: #000;
+        font-size: 24px;
+        font-family: 'Segoe UI';
+        font-weight: bold;
+        margin-left: 10px;
+        padding-top: 75px;
+    }
+
+    .HubPage .SmallTemplate .SmallSubtitle {
+        color: #000;
+        font-size: 24px;
+        font-family: 'Segoe UI';
+        font-weight: lighter;
+        margin-left: 10px;
+        margin-top: -7px;
+    }
+
+
+.HubPage .CampusTemplate {
+    width: 318px;
+    height: 455px;
+    -ms-grid-rows: 170px 1fr;
+    display: -ms-grid;
+}
+
+    .HubPage .CampusTemplate .CampusImage {
+        width: 318px;
+        height: 213px;
+        -ms-grid-row-span: 2;
+    }
+
+    .HubPage .CampusTemplate .CampusOverlay {
+        -ms-grid-row: 2;
+        width: 318px;
+        background-color: rgba(35,24,51,0.88);
+    }
+
+        .HubPage .CampusTemplate .CampusOverlay .CampusTitle {
+            font-family: 'Segoe UI';
+            font-size: 40px;
+            font-weight: 300;
+            color: #ffd458;
+            margin-left: 23px;
+            padding-top: 15px;
+        }
+
+        .HubPage .CampusTemplate .CampusOverlay .CampusSubtitle {
+            font-family: 'Segoe UI';
+            font-size: 13.5px;
+            color: #fff;
+            margin-left: 23px;
+            margin-top: 25px;
+            line-height: 25px;
+            margin-right: 15px;
+        }
+
+
+.HubPage .CampusOneTemplate {
+    width: 318px;
+    height: 455px;
+    -ms-grid-rows: 1fr 213px;
+    display: -ms-grid;
+}
+
+    .HubPage .CampusOneTemplate .CampusOneOverlay {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        height: 285px;
+        width: 318px;
+        background-color: rgba(35,24,51,0.88);
+    }
+
+        .HubPage .CampusOneTemplate .CampusOneOverlay .CampusOneTitle {
+            font-family: 'Segoe UI';
+            font-size: 40px;
+            font-weight: 300;
+            color: #ffd458;
+            margin-left: 20px;
+            padding-top: 15px;
+            letter-spacing: -0.7px;
+        }
+
+        .HubPage .CampusOneTemplate .CampusOneOverlay .CampusOneSubtitle {
+            font-family: 'Segoe UI';
+            font-size: 13.5px;
+            color: #fff;
+            margin-left: 20px;
+            margin-top: 25px;
+            line-height: 25px;
+            margin-right: 15px;
+        }
+
+    .HubPage .CampusOneTemplate .CampusOneImage {
+        width: 318px;
+        height: 213px;
+        -ms-grid-row: 2;
+    }
+
+
+
+
+.win-horizontal.win-viewport .win-container {
+    background-color: rgba(255, 255, 255, 0.0);
+}
+
+.win-vertical.win-viewport .win-container {
+    background-color: rgba(255, 255, 255, 0.0);
+}
