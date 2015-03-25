@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>27925b46-7275-4435-912b-c374bb8483e1</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>EducationBP_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>194D2B97AA3F59DA5F0D23B01A5D6BC3FD7A9E68</PackageCertificateThumbprint>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <AppxBundle>Always</AppxBundle>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="css\default.css" />
+    <None Include="EducationBP_TemporaryKey.pfx" />
+    <None Include="EducationBP_StoreKey.pfx" />
+    <Content Include="images\AppLogo.png" />
+    <Content Include="images\AppLogo2.png" />
+    <Content Include="images\Background.png" />
+    <Content Include="images\BigLiveTile1.jpg" />
+    <Content Include="images\BigLiveTile2.jpg" />
+    <Content Include="images\HubPage\2.jpg" />
+    <Content Include="images\HubPage\CampusLife1.jpg" />
+    <Content Include="images\HubPage\CampusLife1.png" />
+    <Content Include="images\HubPage\CampusLife2.jpg" />
+    <Content Include="images\HubPage\CampusLife3.jpg" />
+    <Content Include="images\HubPage\Capture.png" />
+    <Content Include="images\HubPage\Course1.jpg" />
+    <Content Include="images\HubPage\Course2.jpg" />
+    <Content Include="images\HubPage\CourseImg.jpg" />
+    <Content Include="images\HubPage\CuHappening1.png" />
+    <Content Include="images\HubPage\MainBG.jpg" />
+    <Content Include="images\HubPage\Menaka.jpg" />
+    <Content Include="images\LifeonCampus\FunImg1.jpg" />
+    <Content Include="images\LifeonCampus\FunImg2.jpg" />
+    <Content Include="images\LifeonCampus\FunImg3.jpg" />
+    <Content Include="images\LifeonCampus\Research1.jpg" />
+    <Content Include="images\LifeonCampus\Research2.jpg" />
+    <Content Include="images\LifeonCampus\StudyImg1.jpg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\SmallLiveTile1.jpg" />
+    <Content Include="images\SmallLiveTile2.jpg" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\splashscreen.jpg" />
+    <Content Include="images\splashscreen.png" />
+    <Content Include="images\storelogo.png" />
+    <Content Include="images\widelogo.png" />
+    <Content Include="images\widelogo.scale-100.png" />
+    <Content Include="js\AboutData.js" />
+    <Content Include="js\CampusData.js" />
+    <Content Include="js\CourseData.js" />
+    <Content Include="js\CurrentData.js" />
+    <Content Include="js\data.js" />
+    <Content Include="js\default.js" />
+    <Content Include="js\HubData.js" />
+    <Content Include="js\navigator.js" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="pages\AboutUsPage\AboutUsPage.css" />
+    <Content Include="pages\AboutUsPage\AboutUsPage.html" />
+    <Content Include="pages\AboutUsPage\AboutUsPage.js" />
+    <Content Include="pages\aboutUs\aboutUs.css" />
+    <Content Include="pages\aboutUs\aboutUs.html" />
+    <Content Include="pages\aboutUs\aboutUs.js" />
+    <Content Include="pages\ContactUs\ContactUs.css" />
+    <Content Include="pages\ContactUs\ContactUs.html" />
+    <Content Include="pages\ContactUs\ContactUs.js" />
+    <Content Include="pages\CourseAvailable\CourseAvailable.css" />
+    <Content Include="pages\CourseAvailable\CourseAvailable.html" />
+    <Content Include="pages\CourseAvailable\CourseAvailable.js" />
+    <Content Include="pages\CurrentHappening\CurrentHappening.css" />
+    <Content Include="pages\CurrentHappening\CurrentHappening.html" />
+    <Content Include="pages\CurrentHappening\CurrentHappening.js" />
+    <Content Include="pages\HubPage\HubPage.css" />
+    <Content Include="pages\HubPage\HubPage.html" />
+    <Content Include="pages\HubPage\HubPage.js" />
+    <Content Include="pages\itemDetail\itemDetail.css" />
+    <Content Include="pages\itemDetail\itemDetail.html" />
+    <Content Include="pages\itemDetail\itemDetail.js" />
+    <Content Include="pages\groupDetail\groupDetail.css" />
+    <Content Include="pages\groupDetail\groupDetail.html" />
+    <Content Include="pages\groupDetail\groupDetail.js" />
+    <Content Include="pages\groupedItems\groupedItems.css" />
+    <Content Include="pages\groupedItems\groupedItems.html" />
+    <Content Include="pages\groupedItems\groupedItems.js" />
+    <Content Include="default.html" />
+    <Content Include="pages\LifeOnCampus\LifeOnCampus.css" />
+    <Content Include="pages\LifeOnCampus\LifeOnCampus.html" />
+    <Content Include="pages\LifeOnCampus\LifeOnCampus.js" />
+    <Content Include="pages\privacyPolicy\privacyPolicy.css" />
+    <Content Include="pages\privacyPolicy\privacyPolicy.html" />
+    <Content Include="pages\privacyPolicy\privacyPolicy.js" />
+    <Content Include="pages\termsAndCondition\termsAndCondition.css" />
+    <Content Include="pages\termsAndCondition\termsAndCondition.html" />
+    <Content Include="pages\termsAndCondition\termsAndCondition.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.2.0, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
